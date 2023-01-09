@@ -1,14 +1,8 @@
 package com.springrest.springrest.service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.autoconfigure.AutoConfiguration;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
@@ -40,7 +34,6 @@ public class CourseServiceImpl implements CourseService {
 		return courseDao.findAll();
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public Course getCourseById(long courseId) {
 		// TODO Auto-generated method stub
@@ -83,7 +76,6 @@ public class CourseServiceImpl implements CourseService {
 		return course;
 	}
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public void deleteCourseById(Long valueOf) {
 		// TODO Auto-generated method stub
